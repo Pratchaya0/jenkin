@@ -1,25 +1,29 @@
-var builder = WebApplication.CreateBuilder(args);
+using Jenkin.API;
+using Serilog;
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+try
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var builder = WebApplication.CreateBuilder(args);
+    var configuration = builder.Configuration;
+
+    Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+    Log.Information("Starting web host");
+
+    builder.Host.UseSerilog();
+
+    var startup = new Startup(builder.Configuration);
+    startup.ConfigureServices(builder.Services);
+
+    var app = builder.Build();
+    startup.Configure(app, app.Environment);
+
+    app.Run();
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Host terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}

@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "qNVIQqGSdpVOYW52yIJgy0TdpgUoBDBFq4a4H1Om7cw=",
+  "Source": "Jenkin.API",
+  "BasePath": "_content/Jenkin.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Jenkin.API\\wwwroot",
+      "Source": "Jenkin.API",
+      "ContentRoot": "C:\\Users\\NB-67-04-05\\Documents\\learning\\jenkin-test-project\\Jenkin.API\\Jenkin.API\\wwwroot\\",
+      "BasePath": "_content/Jenkin.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jenkin.API", "Jenkin.API\Jenkin.API.csproj", "{2C075486-52A6-44F6-B83C-4C88911F88CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jenkin.API", "Jenkin.API\Jenkin.API.csproj", "{24C2BD03-B525-4610-B51E-21E21454C1D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C075486-52A6-44F6-B83C-4C88911F88CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C075486-52A6-44F6-B83C-4C88911F88CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C075486-52A6-44F6-B83C-4C88911F88CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C075486-52A6-44F6-B83C-4C88911F88CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C2BD03-B525-4610-B51E-21E21454C1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C2BD03-B525-4610-B51E-21E21454C1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C2BD03-B525-4610-B51E-21E21454C1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C2BD03-B525-4610-B51E-21E21454C1D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4CC3AF24-BD3A-4931-B1D6-ADD04F6DBD08}
+		SolutionGuid = {E1C70DB1-E693-437C-B861-95A80AAFB82E}
 	EndGlobalSection
 EndGlobal

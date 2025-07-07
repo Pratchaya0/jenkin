@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jenkin.API</name>
+    </assembly>
+    <members>
+        <member name="T:Jenkin.API.HostedServices.LoggerRetentionJob">
+            <summary>
+            LoggerRetentionJob is a job to delete old log in database.
+            Normally set for 90 days retention before delete old log.
+            </summary>
+        </member>
+        <member name="M:Jenkin.API.ProjectSetup.ConfigDependency(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ใส่ Dependency Injection ที่ใช้ใน Project
+            </summary>
+        </member>
+        <member name="M:Jenkin.API.ProjectSetup.ConfigQuartz(Quartz.IServiceCollectionQuartzConfigurator,Jenkin.API.Configurations.QuartzSetting)">
+            <summary>
+            ใส่ Job Schedule ที่ใช้ใน Project
+            </summary>
+        </member>
+        <member name="M:Jenkin.API.ProjectSetup.ConfigRabbitMQ(MassTransit.ExtensionsDependencyInjectionIntegration.IServiceCollectionBusConfigurator)">
+            <summary>
+            ใส่ Consumer RabbitMQ ที่ใช้ใน Project
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.Subject">
+            <summary>
+            Guid ของ User
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.Permission">
+            <summary>
+            Permission ของ User
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.Role">
+            <summary>
+            Role ของ User
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.UserId">
+            <summary>
+            User Id ของ User
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.EmployeeCode">
+            <summary>
+            รหัสพนักงาน
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.FirstName">
+            <summary>
+            ชื่อพนักงาน
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.LastName">
+            <summary>
+            นามสกุลพนักงาน
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.BranchId">
+            <summary>
+            รหัสสาขา
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.BranchDetail">
+            <summary>
+            ชื่อสาขา
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.Username">
+            <summary>
+            ชื่อผู้ใช้งาน (ต้องใช้ scope : employee_profile)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.EmployeeId">
+            <summary>
+            ตัวเลข Employee ใน Datacenter (ต้องใช้ scope : employee_profile)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.PersonId">
+            <summary>
+            ตัวเลข Person ใน Datacenter (ต้องใช้ scope : employee_profile)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.FullName">
+            <summary>
+            ชื่อ-นามสกุลพนักงาน (ต้องใช้ scope : employee_profile)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.AreaId">
+            <summary>
+            รหัสภาค (ต้องใช้ scope : employee_branch)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.AreaDetail">
+            <summary>
+            ชื่อภาค (ต้องใช้ scope : employee_branch)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.DepartmentId">
+            <summary>
+            รหัสแผนก (ต้องใช้ scope : employee_department)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.DepartmentDetail">
+            <summary>
+            ชื่อแผนก (ต้องใช้ scope : employee_department)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.EmployeeTeamId">
+            <summary>
+            รหัสทีม (ต้องใช้ scope : employee_team)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.EmployeeTeamDetail">
+            <summary>
+            ชื่อทีม (ต้องใช้ scope : employee_team)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.EmployeePositionId">
+            <summary>
+            รหัสตำแหน่ง (ต้องใช้ scope : employee_position)
+            </summary>
+        </member>
+        <member name="F:Jenkin.API.Services.Auth.LoginDetailClaim.EmployeePositionDetail">
+            <summary>
+            ชื่อตำแหน่ง (ต้องใช้ scope : employee_position)
+            </summary>
+        </member>
+        <member name="M:Jenkin.API.Startups.AuthorizationServices.AddAuthorizationWithOAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,Jenkin.API.Configurations.OAuthSetting)">
+            <summary>
+            Add Authentication
+            </summary>
+        </member>
+        <member name="M:Jenkin.API.Startups.SwaggerServices.AddSwaggerWithOAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,Jenkin.API.Configurations.ProjectSetting,Jenkin.API.Configurations.OAuthSetting)">
+            <summary>
+            Add Swagger
+            </summary>
+        </member>
+    </members>
+</doc>

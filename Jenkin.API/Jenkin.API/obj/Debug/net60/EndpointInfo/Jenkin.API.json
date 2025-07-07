@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Jenkin.API",
+    "description": "Jenkin.API",
+    "version": "v1"
+  },
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://demoauthserver.devsiamsmile.com/connect/authorize",
+            "tokenUrl": "https://demoauthserver.devsiamsmile.com/connect/token",
+            "scopes": {
+              "net60_apitemplate_2023": "Jenkin.API",
+              "openid": "OpenId",
+              "profile": "User's profile",
+              "roles": "User's role"
+            }
+          }
+        }
+      }
+    }
+  }
+}
