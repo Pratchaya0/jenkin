@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MTnCZ68ITco=",
+  "dgSpecHash": "izSnBOGhxos=",
   "success": true,
-  "projectFilePath": "C:\\Users\\NB-67-04-05\\Documents\\learning\\jenkin-test-project\\backend\\Jenkin.API\\Jenkin.API\\Jenkin.API.csproj",
+  "projectFilePath": "C:\\Users\\NB-67-04-05\\Documents\\learning\\jenkin-test-project\\Jenkin.API\\Jenkin.API\\Jenkin.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NB-67-04-05\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\NB-67-04-05\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
